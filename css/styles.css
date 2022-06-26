@@ -88,15 +88,15 @@ body ul {
 .header .list {
   display: flex;
   gap: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 32px 0;
+  padding-bottom: 32px 0;
 }
 
 .header .contacts {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 32px 0;
+  padding-bottom: 32px 0;
   gap: 50px;
 }
 
