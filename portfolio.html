@@ -10,116 +10,145 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <header class="header" id="header">
-        <a class="logo" href="#header">Web<span class="logo-header">Studio</span></a>
-        <nav class="navigation">
-            <ul class="list">
-                <li>
-                    <a class="link" href="index.html">Студия</a>
-                </li>
-                <li>
-                    <a class="link current" href="#">Портфолио</a>
-                </li>
-                <li>
-                    <a class="link" href="#">Контакты</a>
-                </li>
+        <div class="container">
+            <a class="logo" href="#header">Web<span class="logo-header">Studio</span></a>
+            <nav class="navigation">
+                <ul class="list">
+                    <li>
+                        <a class="link " href="./index.html">Студия</a>
+                    </li>
+                    <li>
+                        <a class="link current" href="#">Портфолио</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li><a class="link contacts" href="tel:+380961111111"> +38(096)111-11-11</a></li>
+                <li><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             </ul>
-        </nav>
-        <ul class="contacts">
-            <li><a class="link contacts" href="tel:+380961111111"> +38(096)111-11-11</a></li>
-            <li><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
+        </div>
     </header>
 
     <main>
         <h1 hidden>Наше Портфолио</h1>
-        <section class="filtres">
-            <ul>
-                <li><button class="button-filtres current" type="button">Все</button></li>
-                <li><button class="button-filtres" type="button">Веб-сайты</button></li>
-                <li><button class="button-filtres" type="button">Приложения</button></li>
-                <li><button class="button-filtres" type="button">Дизайн</button></li>
-                <li><button class="button-filtres" type="button">Маркетинг</button></li>
-            </ul>
-
-            <ul>
-                <li>
-                    <a href="#"><img class="filtres-link" src="./images/img-8.jpg" width="370"
-                            alt="Сайт с сотрудниками" />
-                        <h2 class="filter-titles">Технокряк</h2>
-                    </a>
-                    <p class="filter-caption">Веб-сайт</p>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link"><img src="./images/img-9.jpg" width="370"
-                            alt="Игроки NBA с мячом" />
-                        <h2 class="filter-titles">Постер New Orlean vs Golden Star</h2>
-                    </a>
-                    <p class="filter-caption">Дизайн</p>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link"><img src="./images/img-10.jpg" width="370"
-                            alt="Постер с рыбой и надписью Seafood" />
-                        <h2 class="filter-titles">Ресторан Seafood</h2>
-                    </a>
-                    <p class="filter-caption">Приложение</p>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link"><img src="./images/img-11.jpg" width="370" alt="Черные наушники" />
-                        <h2 class="filter-titles">Проект Prime</h2>
-                    </a>
-                    <p class="filter-caption">Маркетинг</p>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link"><img src="./images/img-12.jpg" width="370" alt="Две коробки" />
-                        <h2 class="filter-titles">Проект Boxes</h2>
-                    </a>
-                    <p class="filter-caption">Приложение</p>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link"><img src="./images/img-13.jpg" width="370"
-                            alt="Сайт с темным фоном" />
-                        <h2 class="filter-titles">Inspiration has no Borders</h2>
-                    </a>
-                    <p class="filter-caption">Веб-сайт</p>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link"><img src="./images/img-14.jpg" width="370"
-                            alt="Белый глянцевый журнал" />
-                        <h2 class="filter-titles">Издание Limited Edition</h2>
-                    </a>
-                    <p class="filter-caption">Дизайн</p>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link"><img src="./images/img-15.jpg" width="370"
-                            alt="Белая бирка с надписью LAB EL TAG" />
-                        <h2 class="filter-titles">Проект LAB</h2>
-                    </a>
-                    <p class="filter-caption">Маркетинг</p>
-                </li>
-                <li>
-                    <a href="#" class="filtres-link"><img src="./images/img-16.jpg"
-                            alt="Человек работающий за компьютером" />
-                        <h2 class="filter-titles">Growing Business</h2>
-                    </a>
-                    <p class="filter-caption">Приложение</p>
-                </li>
-            </ul>
-
-            <footer class="footer">
-                <a class="logo" href="#header">Web<span class="logo-footer">Studio</span></a>
-                <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
-                <ul>
-                    <li><a class="link" href="tel:+380961111111"> +38(096)111-11-11</a></li>
-                    <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <section class="filtres section">
+            <div class="container">
+                <ul class="filter-item">
+                    <li><button class="button-filtres current" type="button">Все</button></li>
+                    <li><button class="button-filtres" type="button">Веб-сайты</button></li>
+                    <li><button class="button-filtres" type="button">Приложения</button></li>
+                    <li><button class="button-filtres" type="button">Дизайн</button></li>
+                    <li><button class="button-filtres" type="button">Маркетинг</button></li>
                 </ul>
-            </footer>
+
+                <ul class="filter-list">
+                    <li class="item">
+                        <a href="#"><img class="filtres-link" src="./images/img-8.jpg" width="370"
+                                alt="Сайт с сотрудниками" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Технокряк</h2>
+                            <p class="filter-caption">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="filtres-link"><img src="./images/img-9.jpg" width="370"
+                                alt="Игроки NBA с мячом" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Постер New Orlean vs Golden Star</h2>
+                            <p class="filter-caption">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="filtres-link"><img src="./images/img-10.jpg" width="370"
+                                alt="Постер с рыбой и надписью Seafood" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Ресторан Seafood</h2>
+                            <p class="filter-caption">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="filtres-link"><img src="./images/img-11.jpg" width="370"
+                                alt="Черные наушники" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Проект Prime</h2>
+                            <p class="filter-caption">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="filtres-link"><img src="./images/img-12.jpg" width="370" alt="Две коробки" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Проект Boxes</h2>
+                            <p class="filter-caption">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="filtres-link"><img src="./images/img-13.jpg" width="370"
+                                alt="Сайт с темным фоном" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Inspiration has no Borders</h2>
+                            <p class="filter-caption">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="filtres-link"><img src="./images/img-14.jpg" width="370"
+                                alt="Белый глянцевый журнал" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Издание Limited Edition</h2>
+                            <p class="filter-caption">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="filtres-link"><img src="./images/img-15.jpg" width="370"
+                                alt="Белая бирка с надписью LAB EL TAG" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Проект LAB</h2>
+                            <p class="filter-caption">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="filtres-link"><img src="./images/img-16.jpg"
+                                alt="Человек работающий за компьютером" />
+                        </a>
+                        <div class="list-caption">
+                            <h2 class="filter-titles">Growing Business</h2>
+                            <p class="filter-caption">Приложение</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a class="logo footer" href="#header">Web<span class="logo-footer">Studio</span></a>
+            <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
+            <ul>
+                <li><a class="link" href="tel:+380961111111"> +38(096)111-11-11</a></li>
+                <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
